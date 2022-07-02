@@ -1,0 +1,109 @@
+html {
+  background-color: black;
+  background-image: -webkit-linear-gradient(70deg,lightgreen 50%, black 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: lightgreen;
+  padding: 10px;
+  text-align: center;
+}
+/*
+h3{
+  color: #fff;
+  padding: 10px;
+} */
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  color: white
+}
+
+#heading {
+  background-color:lightgreen;
+  color: black;
+  text-align: center;
+  padding: 10px
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: lightgreen;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: lightgreen;
+  color: #00000;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 lightgreen;
+  color: white;
+}
+
+ input[type ='checkbox']:active{
+   color: lightgreen
+ }
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: black;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

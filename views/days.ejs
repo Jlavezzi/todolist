@@ -6,13 +6,17 @@
 
         <div class="box">
 
-                  <% for (var i = 0; i < item.length; i++) {%>
-                       <div class="item">
-                          <input type="checkbox" name="" value="">
-                         <p><%= item[i]%></p>
+      <%item.forEach((i) => {%>
+ <form  action="/delete" method="post">
+   <div class="item">
+      <input type="checkbox" name="checkbox"  value="<%=i._id%>"  onchange="this.form.submit()">
+     <p><%= i.name%></p>
 
-                       </div>
-                  <%  } %>
+   </div>
+     <input type="hidden" name="listName" value="<%= listTitle%>"></input>
+ </form>
+<% })%>
+
 
       <form class="item" action="/" method="post">
         <input type="text" name="todo" value="" placeholder="Add to list" autocomplete="off">
